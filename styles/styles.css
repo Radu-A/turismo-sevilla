@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Italianno&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    color: inherit;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    font-family: "Raleway";
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+    flex-wrap: wrap;
+    padding: 0rem 2rem;
+    background-color: rgb(91, 186, 207);
+    color: white;
+}
+
+main {
+    flex: 1;
+}
+
+footer {
+    display: flex;
+    /* align-items: baseline; */
+    flex-wrap: wrap;
+    gap: 1rem;
+    padding: 1rem 2rem;
+    background-color: rgb(91, 186, 207);
+    color: white;
+}
+
+/* Header */
+
+header>h1 {
+    margin-right: 3rem;
+    font-family: "Italianno";
+    font-size: 5rem;
+}
+
+.nav-list {
+    display: flex;
+    gap: 2rem;
+    list-style: none;
+}
+
+/* Footer */
+
+.sevilla-logo {
+    height: auto;
+    width: 150px;
+    align-self: baseline;
+}
+
+footer>ul {
+    list-style: none;
+    font-weight: 700;
+}
+
+footer>* {
+    font-size: 0.7rem;
+}
+
+.address {
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+}
