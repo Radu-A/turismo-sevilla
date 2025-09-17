@@ -33,7 +33,8 @@ main {
 
 footer {
     display: flex;
-    /* align-items: baseline; */
+    justify-content: center;
+    align-items: flex-end;
     flex-wrap: wrap;
     gap: 1rem;
     padding: 1rem 2rem;
@@ -81,15 +82,21 @@ header>h1 {
     margin: 2rem;
 }
 
+.description>h2 {
+    font-size: 4rem;
+}
+
 .description>p {
     align-self: center;
+    font-size: 1.2rem;
+    font-style: italic;
 }
 
 /* main parques */
 
 main h1 {
     margin-bottom: 1rem;
-    font-size: 4rem;
+    font-size: 3.5rem;
     text-align: center;
 }
 
@@ -100,6 +107,7 @@ main h1 {
     align-items: center;
     gap: 2rem;
     width: 100%;
+    margin-bottom: 2rem;
 }
 
 .park {
@@ -156,6 +164,15 @@ footer>* {
 /* screens over 600px */
 
 @media (min-width: 600px) {
+    main h1 {
+        margin: 2rem;
+        font-size: 6rem;
+    }
+    
+    .description>p {
+        font-size: 1.5rem;
+    }
+
     .park {
         flex-direction: row;
         justify-content: center;
