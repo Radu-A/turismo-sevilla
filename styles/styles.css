@@ -13,6 +13,7 @@ body {
     flex-direction: column;
     min-height: 100vh;
     font-family: "Raleway";
+    color: rgb(67, 67, 67);
 }
 
 header {
@@ -43,7 +44,7 @@ footer {
 
 header>h1 {
     margin-right: 3rem;
-    font-family: "Italianno";
+    font-family: "Italianno", Arial, Helvetica, sans-serif;
     font-size: 5rem;
 }
 
@@ -51,6 +52,36 @@ header>h1 {
     display: flex;
     gap: 2rem;
     list-style: none;
+}
+
+/* Main */
+
+.home-video {
+  position: relative;
+  width: 100%;              /* ocupa todo el ancho disponible */
+  padding-bottom: 56.25%;   /* relación de aspecto 16:9 = 9/16 */
+  height: 0;                /* truco para la proporción */
+  overflow: hidden;
+}
+
+.home-video iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;              /* el iframe rellena el contenedor */
+  height: 100%;
+  border: 0;
+}
+
+.description {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 2rem;
+}
+
+.description>p {
+    align-self: center;
 }
 
 /* Footer */
