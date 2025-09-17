@@ -13,7 +13,7 @@ body {
     flex-direction: column;
     min-height: 100vh;
     font-family: "Raleway";
-    color: rgb(67, 67, 67);
+    color: #434343;
 }
 
 header {
@@ -28,6 +28,7 @@ header {
 
 main {
     flex: 1;
+    padding: 1rem;
 }
 
 footer {
@@ -50,11 +51,11 @@ header>h1 {
 
 .nav-list {
     display: flex;
-    gap: 2rem;
+    gap: 1.5rem;
     list-style: none;
 }
 
-/* Main */
+/* main index*/
 
 .home-video {
   position: relative;
@@ -84,6 +85,50 @@ header>h1 {
     align-self: center;
 }
 
+/* main parques */
+
+main h1 {
+    margin-bottom: 1rem;
+    font-size: 4rem;
+    text-align: center;
+}
+
+.park-list {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    width: 100%;
+}
+
+.park {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    width: 90%;
+    max-width: 300px;
+    /* border: 1px solid #434343; */
+}
+
+.park-img {
+    flex-shrink: 0;
+    width: 280px;
+    height: 200px;
+    border-radius: 0.5rem;
+}
+
+.park-description {
+    width: 100%;
+    text-align: center;
+}
+
+.park-description>h2 {
+    margin-bottom: 0.5rem;
+}
+
 /* Footer */
 
 .sevilla-logo {
@@ -106,4 +151,17 @@ footer>* {
     flex-direction: column;
     justify-items: center;
     align-items: center;
+}
+
+/* screens over 600px */
+
+@media (min-width: 600px) {
+    .park {
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 1rem;
+        width: 90%;
+        max-width: 800px;
+    }
 }
